@@ -1,4 +1,7 @@
 <article>
+  <% if product.quantity.zero? %>
+    <div class="soldout">Sold Out</div>
+  <% end %>
   <%= link_to product_path(product) do %>
     <%= image_tag product.image.thumb.url , alt: product.name %>
     <h1>
