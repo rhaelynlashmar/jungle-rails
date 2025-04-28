@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # Define the About page route
+  get '/about', to: 'about#index'
 
   root to: 'products#index'
 
